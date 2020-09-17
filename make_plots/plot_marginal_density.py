@@ -6,7 +6,7 @@ from numpy import *
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 
-d = load('density/bakers_density_0.1_0.0_0.1_0.0_endeavour_1024_0.8675180312145866.npy')
+d = load('../data/density/bakers_density_0.1_0.0_0.1_0.0_endeavour_1024_0.8675180312145866.npy')
 
 d *= d.size / d.sum() / (2*pi)**2
 d = flipud(d)
